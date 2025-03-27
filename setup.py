@@ -8,6 +8,8 @@ setup(
     install_requires=[  
         "pydantic>=2.0",  
         "setuptools>=42",
+        "google-genai>=1.7.0",
+        "python-dotenv>=1.1.0"
     ],
     extras_require={
         "dev": ["pytest>=8.1.1"]  #  `pip install -e .[dev]`

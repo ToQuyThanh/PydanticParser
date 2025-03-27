@@ -1,8 +1,9 @@
 import os
+from dotenv import load_dotenv
 from google import genai
 from output_parser_template.models.summarization import SummarizationResponse
 
-
+load_dotenv()
 API_KEY = os.getenv("GEMINI_API_KEY", "YOUR_KEY")
 
 def call_gemini_summarization(prompt: str):
